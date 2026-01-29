@@ -1,0 +1,56 @@
+/* App.css */
+
+/* App container */
+.App {
+  text-align: center;
+  background: #f9f9f9;
+  min-height: 100vh;
+  transition: background 0.3s ease;
+}
+
+/* Dating theme background */
+.App.dating-theme {
+  background: linear-gradient(135deg, #ffb6d5, #ffdee9);
+}
+
+/* Title */
+.app-title {
+  margin: 20px 0;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Tab Bar */
+.tab-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ddd;
+}
+
+.tab {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab.active {
+  border-bottom: 3px solid #0078ff; /* Default blue for general */
+  color: #0078ff;
+}
+
+/* Active tab in Dating theme */
+.App.dating-theme .tab.active {
+  border-bottom: 3px solid #ff4da6;
+  color: #ff4da6;
+}
+
+/* Chat Container */
+.chat-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
